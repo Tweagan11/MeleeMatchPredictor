@@ -48,6 +48,9 @@ The first model was a fully connected neural network that takes in parameters su
 
 While training was somewhat unstable, this model still performed reasonably well, reaching a peak accuracy of approximately **68%**. This suggested that the learned embeddings were capturing meaningful relationships between players and matchups.
 
+
+### Baseline Performance
+![Baseline Performance of Embedding Model](images/FCTrainVal.png)
 ---
 
 ### GRU-Based Temporal Model
@@ -55,6 +58,12 @@ While training was somewhat unstable, this model still performed reasonably well
 To incorporate historical context, I next implemented a **GRU-based model** designed to learn from previous matchups between players. Rather than treating each match independently, this model attempted to capture temporal patterns in player performance.
 
 Although this approach reduced training loss, it appeared to overfit the data. Despite strong performance on the training set, it ultimately produced slightly worse predictions on unseen matches compared to the baseline embedding model.
+
+### GRU Performance (Loss)
+![Graphed Loss of Training and Validation of the Model](images/TrainValLoss_GRU.png)
+
+### GRU Performance (Accuracy)
+![Graphed Accuracy of Training and Validation of the GRU Model](images/TrainValAcc_GRU.png)
 
 ---
 
@@ -69,6 +78,8 @@ This approach allowed the model to leverage matchup history without fully relyin
 
 After implementing the hybrid model, I performed a **hyperparameter grid search** to fine-tune learning rates, embedding sizes, and hidden dimensions. With these adjustments, the model achieved more consistent results, stabilizing between **68–71% accuracy**.
 
+### Hybrid Performance
+![Performance of Hybrid Model (Accuracy)](images/Acc_Mixed.png)
 ---
 
 ## Results
