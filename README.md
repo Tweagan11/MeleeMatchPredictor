@@ -26,6 +26,14 @@ To better understand and validate the data, I generated several visualizations, 
 
 These graphs helped guide feature selection and provided intuition for how much predictive signal existed before modeling.
 
+### Player Win Rate Distribution
+![Player win rate distribution](images/WinRGraph.png)
+
+### Elo Calculation
+![Elo Calculation Graph](images/ELOGraph.png)
+
+### Matches Played
+![Graph of Each Players individual Match Played](images/MatchesPlayedGraph.png)
 ---
 
 ## Model Iterations
