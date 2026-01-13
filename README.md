@@ -34,6 +34,10 @@ These graphs helped guide feature selection and provided intuition for how much 
 
 ### Matches Played
 ![Graph of Each Players individual Match Played](images/MatchesPlayedGraph.png)
+
+
+### Top 5 Players Elo History
+![ELO History of top 5 players](images/Top5Graph.png)
 ---
 
 ## Model Iterations
